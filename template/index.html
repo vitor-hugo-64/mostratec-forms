@@ -28,11 +28,11 @@
           <br>
           <form>
             <div  class="form-check form-check-inline">
-              <input class="form-check-input" type="radio" name="typeRegister" id="afiliacao" value="afiliacao">
+              <input class="form-check-input" type="radio" name="tipo" id="afiliacao" value="afiliacao">
               <label class="form-check-label" for="afiliacao">Afiliação</label>
             </div>
             <div  class="form-check form-check-inline">
-              <input class="form-check-input" type="radio" name="typeRegister" id="reafiliacao" value="reafiliacao">
+              <input class="form-check-input" type="radio" name="tipo" id="reafiliacao" value="reafiliacao">
               <label class="form-check-label" for="reafiliacao">Reafiliação</label>
             </div> 
             <h4>PREENCHA COM OS DADOS ATUAIS DA SUA FEIRA</h4>
@@ -40,143 +40,235 @@
             <br>
             <div class="text-left">
               <div class="form-group">
-                <label for="institutionName">Nome Da Instituição Organizadora Da Feira: </label>
-                <input data-js="input" type="text" class="form-control" id="institutionName" placeholder="Nome Da Instituição">
+                <label for="nomeInstituicao">Nome Da Instituição Organizadora Da Feira: </label>
+                <input data-js="input" type="text" class="form-control" id="nomeInstituicao" placeholder="Nome Da Instituição">
               </div>
               <div class="form-group">
-                <label for="bossName">Nome Do Responsável Pela Instituição Organizadora Da Feira: </label>
-                <input data-js="input" type="text" class="form-control" id="bossName" placeholder="Nome Do Resposável">
+                <label for="nomeOrganizador">Nome Do Responsável Pela Instituição Organizadora Da Feira: </label>
+                <input data-js="input" type="text" class="form-control" id="nomeOrganizador" placeholder="Nome Do Resposável">
               </div>
               <div class="form-row">
                 <div class="col">
-                  <label for="telephoneBoss">Telefone: </label>
-                  <input data-js="input" type="number" name="telephoneBoss" id="telephoneBoss" class="form-control" placeholder="Telefone Do Responsável">
+                  <label for="telefoneOrganizador">Telefone: </label>
+                  <input data-js="input" type="number" name="telefoneOrganizador" id="telefoneOrganizador" class="form-control" placeholder="Telefone Do Responsável">
                 </div>
                 <div class="col">
-                  <label for="emailBoss">Email: </label>
-                  <input data-js="input" type="email" name="emailBoss" id="emailBoss" class="form-control" placeholder="Email Do Responsável">
+                  <label for="emailOrganizador">Email: </label>
+                  <input data-js="input" type="email" name="emailOrganizador" id="emailOrganizador" class="form-control" placeholder="Email Do Responsável">
                 </div>
               </div>
               <br>
               <div class="form-group">
-                <label for="fairName">Nome Da Feira De Ciências: </label>
-                <input data-js="input" class="form-control" type="text" name="fairName" id="fairName" placeholder="Nome Da Feira">
+                <label for="nomeFeira">Nome Da Feira De Ciências: </label>
+                <input data-js="input" class="form-control" type="text" name="nomeFeira" id="nomeFeira" placeholder="Nome Da Feira">
               </div>
               <div class="form-row">
                 <div class="col">
-                  <label for="fairStreet">Rua: </label>
-                  <input data-js="input" type="text" name="fairStreet" id="fairStreet" class="form-control" placeholder="Rua Da Feira">
+                  <label for="ruaFeira">Rua: </label>
+                  <input data-js="input" type="text" name="ruaFeira" id="ruaFeira" class="form-control" placeholder="Rua Da Feira">
                 </div>
                 <div class="col">
-                  <label for="fairNumber">Nº: </label>
-                  <input data-js="input" type="number" name="fairNumber" id="fairNumber" class="form-control" placeholder="Número Da Feira">
+                  <label for="numeroFeira">Nº: </label>
+                  <input data-js="input" type="number" name="numeroFeira" id="numeroFeira" class="form-control" placeholder="Número Da Feira">
                 </div>
                 <div class="col">
-                  <label for="fairCep">CEP: </label>
-                  <input data-js="input" type="number" name="fairCep" id="fairCep" class="form-control" placeholder="CEP Da Feira">
+                  <label for="cepFeira">CEP: </label>
+                  <input data-js="input" type="number" name="cepFeira" id="cepFeira" class="form-control" placeholder="CEP Da Feira">
                 </div>
               </div>
               <br>
               <div class="form-row">
                 <div class="col">
-                  <label for="fairCity">Cidade: </label>
-                  <input data-js="input" type="text" name="fairCity" id="fairCity" class="form-control" placeholder="Cidade Da Feira">
+                  <label for="cidadeFeira">Cidade: </label>
+                  <input data-js="input" type="text" name="cidadeFeira" id="cidadeFeira" class="form-control" placeholder="Cidade Da Feira">
                 </div>
                 <div class="col">
-                  <label for="fairUf">UF: </label>
-                  <input type="text" name="fairUf" id="fairUf" class="form-control" placeholder="UF Da Feira" data-js="input">
+                  <label for="ufFEira">UF: </label>
+                  <input type="text" name="ufFEira" id="ufFEira" class="form-control" placeholder="UF Da Feira" data-js="input">
                 </div>
                 <div class="col">
-                  <label for="fairNation">País: </label>
-                  <input type="text" name="fairNation" id="fairNation" class="form-control" placeholder="País Da Feira" data-js="input">
-                </div>
-              </div>
-              <br>
-              <div class="form-group">
-                <label for="fairSocial">WebSite / Facebook / Blog :</label>
-                <input type="text" name="fairSocial" id="fairSocial" class="form-control" placeholder="Site Da Feira" data-js="input">
-              </div>
-              <div class="form-group">
-                <label for="nameCordinator">Nome Do Cordenador Da Feira: </label>
-                <input type="text" name="nameCordinator" id="nameCordinator" class="form-control" placeholder="Nome Do Cordenador" data-js="input">
-              </div>
-              <div class="form-row">
-                <div class="col">
-                  <label for="telephoneCordinator">Telefone: </label>
-                  <input type="number" name="telephoneCordinator" id="telephoneCordinator" class="form-control" placeholder="Telefone Do Cordenador" data-js="input">
-                </div>
-                <div class="col">
-                  <label for="emailCordinator">Email: </label>
-                  <input type="email" name="emailCordinator" id="emailCordinator" class="form-control" placeholder="Email Do Cordenador" data-js="input">
+                  <label for="paisFeira">País: </label>
+                  <input type="text" name="paisFeira" id="paisFeira" class="form-control" placeholder="País Da Feira" data-js="input">
                 </div>
               </div>
               <br>
               <div class="form-group">
-                <label for="namePeople">Nome De Uma Pessoa Pra Contato: </label>
-                <input type="text" name="namePeople" id="namePeople" class="form-control" placeholder="Nome Da Pessoa" data-js="input">
+                <label for="socialFeira">WebSite / Facebook / Blog :</label>
+                <input type="text" name="socialFeira" id="socialFeira" class="form-control" placeholder="Site Da Feira" data-js="input">
+              </div>
+              <div class="form-group">
+                <label for="nomeCordenador">Nome Do Cordenador Da Feira: </label>
+                <input type="text" name="nomeCordenador" id="nomeCordenador" class="form-control" placeholder="Nome Do Cordenador" data-js="input">
               </div>
               <div class="form-row">
                 <div class="col">
-                  <label for="telephonePeople">Telefone: </label>
-                  <input type="number" name="telephonePeople" id="telephonePeople" class="form-control" placeholder="Telefone Da Pessoa" data-js="input">
+                  <label for="telefoneCordenador">Telefone: </label>
+                  <input type="number" name="telefoneCordenador" id="telefoneCordenador" class="form-control" placeholder="Telefone Do Cordenador" data-js="input">
                 </div>
                 <div class="col">
-                  <label for="emailPeople">Email: </label>
-                  <input type="email" name="emailPeople" id="emailPeople" class="form-control" placeholder="Email Da Pessoa" data-js="input">
+                  <label for="emailCordenador">Email: </label>
+                  <input type="email" name="emailCordenador" id="emailCordenador" class="form-control" placeholder="Email Do Cordenador" data-js="input">
+                </div>
+              </div>
+              <br>
+              <div class="form-group">
+                <label for="nomePessoa">Nome De Uma Pessoa Pra Contato: </label>
+                <input type="text" name="nomePessoa" id="nomePessoa" class="form-control" placeholder="Nome Da Pessoa" data-js="input">
+              </div>
+              <div class="form-row">
+                <div class="col">
+                  <label for="telefonePessoa">Telefone: </label>
+                  <input type="number" name="telefonePessoa" id="telefonePessoa" class="form-control" placeholder="Telefone Da Pessoa" data-js="input">
+                </div>
+                <div class="col">
+                  <label for="emailPessoa">Email: </label>
+                  <input type="email" name="emailPessoa" id="emailPessoa" class="form-control" placeholder="Email Da Pessoa" data-js="input">
                 </div>
               </div>
               <br>
               <div class="form-inline">
-                <div class="form-group">
-                  <label for="fairPeriod">Peridiocidade Da Feira: </label>
-                  <input class="form-check-input" type="radio" name="fairPeriod" id="annual" value="anual" data-js="input">
-                  <label class="form-check-label" for="fairPeriod">Anual</label>                  
+                <div class="form-check form-check-inline">
+                  <label>Peridiocidade Da Feira: </label>
                 </div>
-                <div class="form-group">
-                  <label for="fairPeriod">Outro. Qual? </label>
-                  <input type="text" name="fairPeriod" id="other" class="form-control" placeholder="Outro Periodo" data-js="input">                  
+                <div class="form-check form-check-inline">
+                  <input class="form-check-input" type="radio" name="periodoFeira" id="anual" value="anual" data-js="input">
+                  <label class="form-check-label" for="anual">Anual</label>                  
+                </div>
+                <div class="form-check form-check-inline">
+                  <input class="form-check-input" type="radio" name="periodoFeira" id="outro" value="outro" data-js="input">
+                  <label class="form-check-label" for="outro">Outro </label>
+                  <input type="text" name="outroPeriodo" class="form-control" disabled="disabled" placeholder="informe aqui">                  
                 </div>
               </div>
               <br>
               <div class="form-group">
-                <label for="fairDateRecent">Data De Realização Mais Recente Da Feira</label>
-                <input type="date" name="fairDateRecent" id="fairDateRecent" class="form-control" placeholder="Data Da Feira Mais Recente" data-js="input">
+                <label for="dataRecenteFeira">Data De Realização Mais Recente Da Feira</label>
+                <input type="date" name="dataRecenteFeira" id="dataRecenteFeira" class="form-control" placeholder="Data Da Feira Mais Recente" data-js="input">
               </div>
               <div class="form-group">
-                <label for="fairDateNext ">Data De Realização Da Próxima Feira</label>
-                <input type="date" name="fairDateNext" id="fairDateNext" class="form-control" placeholder="Data Da Próxima Feira" data-js="input">
+                <label for="dataProximaFeira">Data De Realização Da Próxima Feira</label>
+                <input type="date" name="dataProximaFeira" id="dataProximaFeira" class="form-control" placeholder="Data Da Próxima Feira" data-js="input">
               </div>
               <div class="form-check form-check-inline">
-                <input type="radio" name="dateConfirm" id="confirm" class="form-check-input" placeholder="Confirmação Da Data DA Feira" data-js="input">
-                <label class="form-check-label" for="confirm">Confirmado</label>
+                <input type="radio" name="confirmaData" id="confirmado" class="form-check-input" placeholder="Confirmação Da Data DA Feira" data-js="input">
+                <label class="form-check-label" for="confirmado">Confirmado</label>
               </div>
               <div class="form-check form-check-inline">
-                <input type="radio" name="dateConfirm" id="maybe" class="form-check-input" placeholder="Confirmação Da Data DA Feira" data-js="input">
-                <label class="form-check-label" for="maybe">Previsão, Pois A Data Não Está Definida</label>
+                <input type="radio" name="confirmaData" id="talvez" class="form-check-input" placeholder="Confirmação Da Data DA Feira" data-js="input">
+                <label class="form-check-label" for="talvez">Previsão, Pois A Data Não Está Definida</label>
               </div>
               <br>
               <br>
               <div class="form-group">
-                <label for="editionNumber">Número De Edição Da Feira: </label>
-                <input type="number" name="editionNumber" id="editionNumber" class="form-control" placeholder="Número De Edição Da Feira" data-js="input">
+                <label for="numeroEdicao">Número De Edição Da Feira: </label>
+                <input type="number" name="numeroEdicao" id="numeroEdicao" class="form-control" placeholder="Número De Edição Da Feira" data-js="input">
               </div>
               <br>
               <div>
                 <span>Marque Quais São As Areas De Pesquisa Da Sua Feira</span>
                 <br>
                 <div class="form-check">
-                  <input class="form-check-input" type="checkbox" name="area" value="artes" id="artes" data-js="input">
+                  <input class="form-check-input" type="checkbox" name="opcao1" value="artes" id="artes" data-js="input">
                   <label class="form-check-label" for="artes">
                     Artes
                   </label>
                 </div>
                 <div class="form-check">
-                  <input class="form-check-input" type="checkbox" name="area" value="artes" id="artes" data-js="input">
-                  <label class="form-check-label" for="artes">
-                    Artes
+                  <input class="form-check-input" type="checkbox" name="opcao2" value="biologia" id="biologia" data-js="input">
+                  <label class="form-check-label" for="biologia">
+                    Biologia
                   </label>
-                </div>                                    
-              </div>              
+                </div>
+                <div class="form-check">
+                  <input class="form-check-input" type="checkbox" name="opcao3" value="educação e pedagogia" id="educacao-e-pedagogia" data-js="input">
+                  <label class="form-check-label" for="educacao-e-pedagogia">
+                    Educação E Pedagogia
+                  </label>
+                </div>
+                <div class="form-check">
+                  <input class="form-check-input" type="checkbox" name="opcao4" value="eletrônica, informatica e robotica" id="eletrônica-informatica-e-robotica" data-js="input">
+                  <label class="form-check-label" for="eletrônica-informatica-e-robotica">
+                    Eletrônica, Informática e Robótica
+                  </label>
+                </div>
+                <div class="form-check">
+                  <input class="form-check-input" type="checkbox" name="opcao5" value="engenharia" id="engenharia" data-js="input">
+                  <label class="form-check-label" for="engenharia">
+                    Engenharia
+                  </label>
+                </div>
+                <div class="form-check">
+                  <input class="form-check-input" type="checkbox" name="opcao6" value="filosofia" id="filosofia" data-js="input">
+                  <label class="form-check-label" for="filosofia">
+                    Filosofia
+                  </label>
+                </div>
+                <div class="form-check">
+                  <input class="form-check-input" type="checkbox" name="opcao7" value="fisica" id="fisica" data-js="input">
+                  <label class="form-check-label" for="fisica">
+                    Física
+                  </label>
+                </div>
+                <div class="form-check">
+                  <input class="form-check-input" type="checkbox" name="opcao8" value="geografia" id="geografia" data-js="input">
+                  <label class="form-check-label" for="geografia">
+                    Geografia
+                  </label>
+                </div>
+                <div class="form-check">
+                  <input class="form-check-input" type="checkbox" name="opcao9" value="historia" id="historia" data-js="input">
+                  <label class="form-check-label" for="historia">
+                    História
+                  </label>
+                </div>
+                <div class="form-check">
+                  <input class="form-check-input" type="checkbox" name="opcao10" value="Inclusão, Acessibilidade e Tecnologia Assistiva" id="inclusão-acessibilidade-e-tecnologia-assistiva" data-js="input">
+                  <label class="form-check-label" for="inclusão-acessibilidade-e-tecnologia-assistiva">
+                    Inclusão, Acessibilidade e Tecnologia Assistiva
+                  </label>
+                </div>
+                <div class="form-check">
+                  <input class="form-check-input" type="checkbox" name="opcao11" value="quimica" id="quimica" data-js="input">
+                  <label class="form-check-label" for="quimica">
+                    Química
+                  </label>
+                </div>
+                <div class="form-check">
+                  <input class="form-check-input" type="checkbox" name="opcao12" value="Língua Portuguesa, Língua Estrangeira e Literatura" id="lingua-portuguesa-lingua-estrangeira-e-literatura" data-js="input">
+                  <label class="form-check-label" for="lingua-portuguesa-lingua-estrangeira-e-literatura">
+                    Língua Portuguesa, Língua Estrangeira e Literatura
+                  </label>
+                </div>
+                <div class="form-check">
+                  <input class="form-check-input" type="checkbox" name="opcao13" value="matematica" id="matematica" data-js="input">
+                  <label class="form-check-label" for="matematica">
+                    Matemática
+                  </label>                
+                </div>
+                <div class="form-check">
+                  <input class="form-check-input" type="checkbox" name="opcao14" value="meio ambiente" id="meio-ambiente" data-js="input">
+                  <label class="form-check-label" for="meio-ambiente">
+                    Meio Ambiente
+                  </label>                  
+                </div>
+                <div class="form-check">
+                  <input class="form-check-input" type="checkbox" name="opcao15" value="saude" id="saude" data-js="input">
+                  <label class="form-check-label" for="saude">
+                    Saúde
+                  </label>                  
+                </div>
+                <div class="form-check">
+                  <input class="form-check-input" type="checkbox" name="opcao16" value="sociologia" id="sociologia" data-js="input">
+                  <label class="form-check-label" for="sociologia">
+                    Sociologia
+                  </label>                  
+                </div>
+                <div class="form-check">
+                  <input class="form-check-input" type="checkbox" name="opcao17" value="outra" id="outra" data-js="input">
+                  <label class="form-check-label" for="outra">
+                    Outra
+                  </label>                  
+                </div>  
               <br>
               <input type="submit" name="submit" value="Enviar" class="btn btn-success">                                   
           </form>
