@@ -28,11 +28,11 @@
           <br>
           <form data-js='submit' action="submit.php" method="POST">
             <div  class="form-check form-check-inline">
-              <input class="form-check-input" type="radio" name="tipo" id="afiliacao" value="afiliacao" data-js='input'>
+              <input class="form-check-input" type="radio" name="tipo" id="afiliacao" value="afiliacao" data-js='radio' placeholder="Afiliação">
               <label class="form-check-label" for="afiliacao">Afiliação</label>
             </div>
             <div  class="form-check form-check-inline">
-              <input class="form-check-input" type="radio" name="tipo" id="reafiliacao" value="reafiliacao"  data-js='input'>
+              <input class="form-check-input" type="radio" name="tipo" id="reafiliacao" value="reafiliacao"  data-js='radio' placeholder="Reafiliação">
               <label class="form-check-label" for="reafiliacao">Reafiliação</label>
             </div> 
             <h4>PREENCHA COM OS DADOS ATUAIS DA SUA FEIRA</h4>
@@ -44,17 +44,17 @@
                 <input data-js="input" type="text" name="nomeInstituicao" class="form-control" id="nomeInstituicao" placeholder="Nome Da Instituição">
               </div>
               <div class="form-group">
-                <label for="nomeOrganizador">Nome Do Responsável Pela Instituição Organizadora Da Feira: </label>
-                <input data-js="input" type="text" class="form-control" name="nomeOrganizador" id="nomeOrganizador" placeholder="Nome Do RespoNsável">
+                <label for="nomeResponsavel">Nome Do Responsável Pela Instituição Organizadora Da Feira: </label>
+                <input data-js="input" type="text" class="form-control" name="nomeResponsavel" id="nomeResponsavel" placeholder="Nome Do Responsável">
               </div>
               <div class="form-row">
                 <div class="col">
-                  <label for="telefoneOrganizador">Telefone: </label>
-                  <input data-js="input" type="number" name="telefoneOrganizador" id="telefoneOrganizador" class="form-control" placeholder="Telefone Do Responsável">
+                  <label for="telefoneResponsavel">Telefone: </label>
+                  <input data-js="input" type="number" name="telefoneResponsavel" id="telefoneResponsavel" class="form-control" placeholder="Telefone Do Responsável">
                 </div>
                 <div class="col">
-                  <label for="emailOrganizador">Email: </label>
-                  <input data-js="input" type="email" name="emailOrganizador" id="emailOrganizador" class="form-control" placeholder="Email Do Responsável">
+                  <label for="emailResponsavel">Email: </label>
+                  <input data-js="input" type="email" name="emailResponsavel" id="emailResponsavel" class="form-control" placeholder="Email Do Responsável">
                 </div>
               </div>
               <br>
@@ -139,7 +139,7 @@
                   <label class="form-check-label" for="outroPeriodo">Outro Periodo? </label>                 
                 </div>
                 <div class="form-group">
-                    <input type="text" name="outroPeriodoQual" id="outroPeriodoQual" class="form-control" data-js="input" placeholder="Informe Aqui O Outro Periodo"> 
+                    <input type="text" name="outroPeriodoQual" id="outroPeriodoQual" class="form-control" data-js="input" placeholder="Outro Periodo"> 
                 </div>
               </div>
               <br>
@@ -152,11 +152,11 @@
                 <input type="date" name="dataProximaFeira" id="dataProximaFeira" class="form-control" placeholder="Data Da Próxima Feira" data-js="input">
               </div>
               <div class="form-check form-check-inline">
-                <input type="radio" name="confirmaData" id="sim" value="sim" class="form-check-input" placeholder="Confirmação Da Data DA Feira" data-js="input">
+                <input type="radio" name="confirmaData" id="sim" value="S" class="form-check-input" placeholder="Confirmação Da Data DA Feira" data-js="radio">
                 <label class="form-check-label" for="sim">Confirmado</label>
               </div>
               <div class="form-check form-check-inline">
-                <input type="radio" name="confirmaData" id="nao" value="nao" class="form-check-input" placeholder="Confirmação Da Data DA Feira" data-js="input">
+                <input type="radio" name="confirmaData" id="nao" value="N" class="form-check-input" placeholder="Confirmação Da Data DA Feira" data-js="radio">
                 <label class="form-check-label" for="nao">Previsão, Pois A Data Não Está Definida</label>
               </div>
               <br>
@@ -279,35 +279,35 @@
               <div>
                 <label><strong>9.</strong> Assinale O Tipo De Feira</label>
                 <div class="form-check">
-                  <input type="radio" name="tipoFeira" class="form-check-input" id="escolar" data-js="input">
+                  <input type="radio" name="tipoFeira" class="form-check-input" id="escolar" data-js="radio" value="escolar">
                   <label class="form-check-label" for="escolar">Escolar (participam projetos somente de uma escola)</label>
                 </div>
                 <div class="form-check">
-                  <input type="radio" name="tipoFeira" class="form-check-input" id="multiescolar" data-js="input">
+                  <input type="radio" name="tipoFeira" class="form-check-input" id="multiescolar" data-js="radio" value="multiescolar">
                   <label class="form-check-label" for="multiescolar">Multiescolar (participam projetos de diferentes escolas, podendo ser de uma mesma rede ou redes diferentes, inclusive de cidades diferentes) </label>
                 </div>
                 <div class="form-check">
-                  <input type="radio" name="tipoFeira" class="form-check-input" id="municipal" data-js="input">
+                  <input type="radio" name="tipoFeira" class="form-check-input" id="municipal" data-js="radio" value="municipal">
                   <label class="form-check-label" for="municipal">Municipal (participam exclusivamente projetos da rede municipal de educação)</label>
                 </div>
                 <div class="form-check">
-                  <input type="radio" name="tipoFeira" class="form-check-input" id="estadual" data-js="input">
+                  <input type="radio" name="tipoFeira" class="form-check-input" id="estadual" data-js="radio" value="estadual">
                   <label class="form-check-label" for="estadual">Estadual</label>
                 </div>
                 <div class="form-check">
-                  <input type="radio" name="tipoFeira" class="form-check-input" id="regional" data-js="input">
+                  <input type="radio" name="tipoFeira" class="form-check-input" id="regional" data-js="radio" value="regional">
                   <label class="form-check-label" for="regional">Regional</label>
                 </div>
                 <div class="form-check">
-                  <input type="radio" name="tipoFeira" class="form-check-input" id="nacional" data-js="input">
+                  <input type="radio" name="tipoFeira" class="form-check-input" id="nacional" data-js="radio" value="nacional">
                   <label class="form-check-label" for="nacional">Nacional</label>
                 </div>
                 <div class="form-check">
-                  <input type="radio" name="tipoFeira" class="form-check-input" id="internacional" data-js="input">
+                  <input type="radio" name="tipoFeira" class="form-check-input" id="internacional" data-js="radio" value="internacional">
                   <label class="form-check-label" for="internacional">Internacional</label>
                 </div>
                 <div class="form-check">
-                    <input type="radio" name="tipoFeira" id="outroQual" class="form-check-input" data-js='input'>
+                    <input type="radio" name="tipoFeira" id="outroQual" value="outro" class="form-check-input" data-js='input'>
                     <label for="outroQual">Outro.Qual? </label>
                 </div>
                 <div class="form-group">
@@ -322,11 +322,11 @@
               <div>
                 <label><strong>11.</strong> Existe Um Comite De Revisão Ciêntifica Na Feira (informar a existencia de um grupo dentro da organização que se dedique à observação da regulamento e das regras de exposição, bem como da verificação da documentação dos projetos, identificando aspectos de ética e segurança observadas ao longo do processo pelos participantes. Caso exista esse grupo, descrever sua composição e forma de atuação): </label>
                 <div class="form-check form-check-inline">
-                  <input type="radio" name="existeComite" class="form-check-input" id="sim" value="sim" placeholder="Se Existe Comite De Revisão Ciêntifica" data-js='input'>
+                  <input type="radio" name="existeComite" class="form-check-input" id="sim" value="S" placeholder="Se Existe Comite De Revisão Ciêntifica" data-js='radio'>
                   <label for="sim" class="form-check-label">Sim</label>
                 </div>
                 <div class="form-check form-check-inline">
-                  <input type="radio" name="existeComite" class="form-check-input" id="nao" value="sim" data-js='input'>
+                  <input type="radio" name="existeComite" class="form-check-input" id="N" value="sim" data-js='radio'>
                   <label for="nao" class="form-check-label">Não</label>
                 </div>
               </div>
@@ -340,7 +340,7 @@
                 <label><strong>13.</strong> O Nível De Ensino Dos Estudantes Para A Participação Na Mostratec Júnior Deve Ser Educação Infantil Ou Ensino Fundamental. Em Sua Feira, Participam Projetos De Alunos De Quais Níveis De Ensino? </label>
                 <div>
                   <div class="form-check">
-                    <input class="form-check-input" type="checkbox" name="nivelEnsinoAlunos" id="educacaoInfantil" data-js="input" value="educacaoInfantil" placeholder="Nivel De Ensino Dos Estudantes">
+                    <input class="form-check-input" type="checkbox" name="nivelEnsinoAlunosEducacaoInfantil" id="educacaoInfantil" data-js="input" value="educacaoInfantil" placeholder="Educação Infantil">
                     <label class="form-check-label" for="educacaoInfantil">
                       Educação Infantil
                     </label>
@@ -363,7 +363,7 @@
                 <br>
                 <div>
                   <div class="form-check">
-                    <input class="form-check-input" type="checkbox" name="nivelEnsinoAlunos" id="educacaoFundamental" data-js="input" value="educacaoFundamental" placeholder="Nivel De Ensino Dos Estudantes">
+                    <input class="form-check-input" type="checkbox" name="nivelEnsinoAlunosEducacaoFudamental" id="educacaoFundamental" data-js="input" value="educacaoFundamental" placeholder="Educação Fundamental">
                     <label class="form-check-label" for="educacaoFundamental">
                       Educação Fundamental
                     </label>
@@ -386,7 +386,7 @@
                 <br>
                 <div>
                   <div class="form-check">
-                    <input class="form-check-input" type="checkbox" name="nivelEnsinoAlunos" id="educacaoMedioProfissional" data-js="input" value="educacaoMedioProfissional" placeholder="Nivel De Ensino Dos Estudantes">
+                    <input class="form-check-input" type="checkbox" name="nivelEnsinoAlunosEducacaoMedioProfissional" id="educacaoMedioProfissional" data-js="input" value="educacaoMedioProfissional" placeholder="Ensino Médio">
                     <label class="form-check-label" for="educacaoMedioProfissional">
                       Ensino Médio E Ensino Profissional Técnico De Nível Médio
                     </label>
@@ -404,7 +404,17 @@
                       </label>
                       <input class="form-control" type="number" name="numeroEscolasMedioProfissional" id="numeroEscolasMedioProfissional" data-js="input" placeholder="Número De Projetos">
                     </div>                  
-                  </div>                
+                  </div>
+                  <br>
+                  <div>
+                    <label for="numeroTotalProjetosProximaEdicao" >Número Total De Projetos Previstos Para A Próxima Edição Da Feira: </label>
+                    <input type="number" name="numeroTotalProjetosProximaEdicao" id="numeroTotalProjetosProximaEdicao" class="form-control" data-js="input" placeholder="Número Total De Projetos Previstos Pra Próxima Edição">
+                  </div>
+                  <br>
+                  <div>
+                    <label>Número Total De Escolas Previstos Para A Próxima Edição Da Feira: </label>
+                    <input type="number" name="numeroTotalEscolasProximaEdicao" id="numeroTotalEscolasProximaEdicao" class="form-control" placeholder="Número Total De Escolas Para A Próxima Edição" data-js="input">
+                  </div>
                 </div>                  
               </div>
               <br>
@@ -412,19 +422,19 @@
                 <label><strong>14.</strong> Informe A Faixa Etária Dos Alunos Que Participam Da Feira De Acordo Com Os Níveis De Ensino: </label>
                 <div class="form-group">
                   <label for="ensinoInfantil">Ensino Infantil</label>
-                  <input type="text" class="form-control" name="faixaEtaria" id="ensinoInfantil" data-js="input" placeholder="Faixa Etaria Dos Alunos Que Participam Da Feira">
+                  <input type="text" class="form-control" name="faixaEtariaInfantil" id="ensinoInfantil" data-js="input" placeholder="Faixa Etaria Dos Alunos Que Participam Da Feira">
                 </div>
                 <div class="form-group">
                   <label for="ensinoFundamental">Ensino Fundamental</label>
-                  <input type="text" name="faixaEtaria" id="ensinoFundamental" class="form-control" data-js="input" placeholder="Faixa Etaria Dos Alunos Que Participam Da Feira">
+                  <input type="text" name="faixaEtariaFundamental" id="ensinoFundamental" class="form-control" data-js="input" placeholder="Faixa Etaria Dos Alunos Que Participam Da Feira">
                 </div>
                 <div class="form-group">
                   <label for="ensinoMedio">Ensino Médio</label>
-                  <input type="text" name="faixaEtaria" id="ensinoMedio" class="form-control" data-js="input" placeholder="Faixa Etaria Dos Alunos Que Participam Da Feira">
+                  <input type="text" name="faixaEtariaMedio" id="ensinoMedio" class="form-control" data-js="input" placeholder="Faixa Etaria Dos Alunos Que Participam Da Feira">
                 </div>
                 <div class="form-group">
                   <label for="ensinoSuperior">Ensino Superior</label>
-                  <input type="text" name="faixaEtaria" id="ensinoSuperior" class="form-control" data-js="input" placeholder="Faixa Etaria Dos Alunos Que Participam Da Feira">
+                  <input type="text" name="faixaEtariaSuperior" id="ensinoSuperior" class="form-control" data-js="input" placeholder="Faixa Etaria Dos Alunos Que Participam Da Feira">
                 </div>                
               </div>
               <br>
@@ -536,18 +546,18 @@
                 <br>
                 <div class="form-group">
                   <label for="numeroEscolasPublicasTotal">Número De Escolas Privadas: </label>
-                  <input type="number" name="numeroEscolasPublicasTotal" id="numeroEscolasPublicasTotal" class="form-control" data-js="input" placeholder="Número Total De Escolas Públicas">
+                  <input type="number" name="numeroEscolasPrivadasTotal" id="numeroEscolasPublicasTotal" class="form-control" data-js="input" placeholder="Número Total De Escolas Públicas">
                 </div>
                 <br><br>
                 <label>Solicitações de Vagas Na Mostratec Junior 2018: </label>
                 <div class="form-group">
                   <label for="numeroProjetosEnsinoFundamental">Número De Projetos Desejado Para Credenciamento Na Mostratec Júnior 2018 - Ensino Fundamental: </label>
-                  <input type="number" name="numeroProjetosEnsinoFundamental" id="numeroProjetosEnsinoFundamental" class="form-control" data-js="input" placeholder="Numero de Projetos Desejado Para Credenciar">
+                  <input type="number" name="numeroProjetosCredenciamento" id="numeroProjetosEnsinoFundamental" class="form-control" data-js="input" placeholder="Numero de Projetos Desejado Para Credenciar">
                 </div>
                 <br>
                 <div class="form-group">
                   <label for="numeroProjetosEnsinoInfantil">Número De Projetos Desejado Para Credenciamento Na Mostratec Júnior 2018 - Ensino Infantil: </label>
-                  <input type="number" name="numeroProjetosEnsinoInfantil" id="numeroProjetosEnsinoInfantil" class="form-control" data-js="input" placeholder="Número De Projetos Desejado Para Credenciar">
+                  <input type="number" name="numeroProjetosCredenciamentoDesejado" id="numeroProjetosEnsinoInfantil" class="form-control" data-js="input" placeholder="Número De Projetos Desejado Para Credenciar">
                 </div>
                 <br>
 
