@@ -28,11 +28,11 @@
           <br>
           <form data-js='submit' action="submit.php" method="POST">
             <div  class="form-check form-check-inline">
-              <input class="form-check-input" type="radio" name="tipo" id="afiliacao" value="afiliacao" data-js='radio' placeholder="Afiliação">
+              <input class="form-check-input" type="radio" name="tipo" id="afiliacao" value="afiliacao" data-js='tipo' placeholder="Afiliação">
               <label class="form-check-label" for="afiliacao">Afiliação</label>
             </div>
             <div  class="form-check form-check-inline">
-              <input class="form-check-input" type="radio" name="tipo" id="reafiliacao" value="reafiliacao"  data-js='radio' placeholder="Reafiliação">
+              <input class="form-check-input" type="radio" name="tipo" id="reafiliacao" value="reafiliacao"  data-js='tipo' placeholder="Reafiliação">
               <label class="form-check-label" for="reafiliacao">Reafiliação</label>
             </div> 
             <h4>PREENCHA COM OS DADOS ATUAIS DA SUA FEIRA</h4>
@@ -131,15 +131,15 @@
                   <label><strong>5.</strong> Peridiocidade Da Feira: </label>
                 </div>
                 <div class="form-check form-check-inline">
-                  <input class="form-check-input" type="radio" name="periodoFeira" id="anual" value="anual" data-js="input">
+                  <input class="form-check-input" type="radio" name="periodoFeira" id="anual" value="anual" data-js="periodo">
                   <label class="form-check-label" for="anual">Anual</label>                  
                 </div>
                 <div class="form-check form-check-inline">
-                  <input class="form-check-input" type="radio" name="periodoFeira" id="outroPeriodo" value="outro" data-js="input">
+                  <input class="form-check-input" type="radio" name="periodoFeira" id="outroPeriodo" value="outro" data-js="periodo">
                   <label class="form-check-label" for="outroPeriodo">Outro Periodo? </label>                 
                 </div>
                 <div class="form-group">
-                    <input type="text" name="outroPeriodoQual" id="outroPeriodoQual" class="form-control" data-js="input" placeholder="Outro Periodo"> 
+                    <input type="text" name="outroPeriodoQual" id="outroPeriodoQual" class="form-control" placeholder="Outro Periodo"> 
                 </div>
               </div>
               <br>
@@ -152,11 +152,11 @@
                 <input type="date" name="dataProximaFeira" id="dataProximaFeira" class="form-control" placeholder="Data Da Próxima Feira" data-js="input">
               </div>
               <div class="form-check form-check-inline">
-                <input type="radio" name="confirmaData" id="sim" value="S" class="form-check-input" placeholder="Confirmação Da Data DA Feira" data-js="radio">
+                <input type="radio" name="confirmaData" id="sim" value="S" class="form-check-input" placeholder="Confirmação Da Data DA Feira" data-js="confirmacao">
                 <label class="form-check-label" for="sim">Confirmado</label>
               </div>
               <div class="form-check form-check-inline">
-                <input type="radio" name="confirmaData" id="nao" value="N" class="form-check-input" placeholder="Confirmação Da Data DA Feira" data-js="radio">
+                <input type="radio" name="confirmaData" id="nao" value="N" class="form-check-input" placeholder="Confirmação Da Data DA Feira" data-js="confirmacao">
                 <label class="form-check-label" for="nao">Previsão, Pois A Data Não Está Definida</label>
               </div>
               <br>
@@ -170,109 +170,109 @@
                 <span><strong>8.</strong> Marque Quais São As Areas De Pesquisa Da Sua Feira</span>
                 <br>
                 <div class="form-check">
-                  <input class="form-check-input" type="checkbox" name="opcao1" value="artes" id="artes" data-js="input">
+                  <input class="form-check-input" type="checkbox" name="opcao1" value="artes" id="artes" data-js="check">
                   <label class="form-check-label" for="artes">
                     Artes
                   </label>
                 </div>
                 <div class="form-check">
-                  <input class="form-check-input" type="checkbox" name="opcao2" value="biologia" id="biologia" data-js="input">
+                  <input class="form-check-input" type="checkbox" name="opcao2" value="biologia" id="biologia" data-js="check"">
                   <label class="form-check-label" for="biologia">
                     Biologia
                   </label>
                 </div>
                 <div class="form-check">
-                  <input class="form-check-input" type="checkbox" name="opcao3" value="educação e pedagogia" id="educacao-e-pedagogia" data-js="input">
+                  <input class="form-check-input" type="checkbox" name="opcao3" value="educação e pedagogia" id="educacao-e-pedagogia" data-js="check"">
                   <label class="form-check-label" for="educacao-e-pedagogia">
                     Educação E Pedagogia
                   </label>
                 </div>
                 <div class="form-check">
-                  <input class="form-check-input" type="checkbox" name="opcao4" value="eletrônica, informatica e robotica" id="eletrônica-informatica-e-robotica" data-js="input">
+                  <input class="form-check-input" type="checkbox" name="opcao4" value="eletrônica, informatica e robotica" id="eletrônica-informatica-e-robotica" data-js="check"">
                   <label class="form-check-label" for="eletrônica-informatica-e-robotica">
                     Eletrônica, Informática e Robótica
                   </label>
                 </div>
                 <div class="form-check">
-                  <input class="form-check-input" type="checkbox" name="opcao5" value="engenharia" id="engenharia" data-js="input">
+                  <input class="form-check-input" type="checkbox" name="opcao5" value="engenharia" id="engenharia" data-js="check"">
                   <label class="form-check-label" for="engenharia">
                     Engenharia
                   </label>
                 </div>
                 <div class="form-check">
-                  <input class="form-check-input" type="checkbox" name="opcao6" value="filosofia" id="filosofia" data-js="input">
+                  <input class="form-check-input" type="checkbox" name="opcao6" value="filosofia" id="filosofia" data-js="check"">
                   <label class="form-check-label" for="filosofia">
                     Filosofia
                   </label>
                 </div>
                 <div class="form-check">
-                  <input class="form-check-input" type="checkbox" name="opcao7" value="fisica" id="fisica" data-js="input">
+                  <input class="form-check-input" type="checkbox" name="opcao7" value="fisica" id="fisica" data-js="check"">
                   <label class="form-check-label" for="fisica">
                     Física
                   </label>
                 </div>
                 <div class="form-check">
-                  <input class="form-check-input" type="checkbox" name="opcao8" value="geografia" id="geografia" data-js="input">
+                  <input class="form-check-input" type="checkbox" name="opcao8" value="geografia" id="geografia" data-js="check"">
                   <label class="form-check-label" for="geografia">
                     Geografia
                   </label>
                 </div>
                 <div class="form-check">
-                  <input class="form-check-input" type="checkbox" name="opcao9" value="historia" id="historia" data-js="input">
+                  <input class="form-check-input" type="checkbox" name="opcao9" value="historia" id="historia" data-js="check"">
                   <label class="form-check-label" for="historia">
                     História
                   </label>
                 </div>
                 <div class="form-check">
-                  <input class="form-check-input" type="checkbox" name="opcao10" value="Inclusão, Acessibilidade e Tecnologia Assistiva" id="inclusão-acessibilidade-e-tecnologia-assistiva" data-js="input">
+                  <input class="form-check-input" type="checkbox" name="opcao10" value="Inclusão, Acessibilidade e Tecnologia Assistiva" id="inclusão-acessibilidade-e-tecnologia-assistiva" data-js="check"">
                   <label class="form-check-label" for="inclusão-acessibilidade-e-tecnologia-assistiva">
                     Inclusão, Acessibilidade e Tecnologia Assistiva
                   </label>
                 </div>
                 <div class="form-check">
-                  <input class="form-check-input" type="checkbox" name="opcao11" value="quimica" id="quimica" data-js="input">
+                  <input class="form-check-input" type="checkbox" name="opcao11" value="quimica" id="quimica" data-js="check">
                   <label class="form-check-label" for="quimica">
                     Química
                   </label>
                 </div>
                 <div class="form-check">
-                  <input class="form-check-input" type="checkbox" name="opcao12" value="Língua Portuguesa, Língua Estrangeira e Literatura" id="lingua-portuguesa-lingua-estrangeira-e-literatura" data-js="input">
+                  <input class="form-check-input" type="checkbox" name="opcao12" value="Língua Portuguesa, Língua Estrangeira e Literatura" id="lingua-portuguesa-lingua-estrangeira-e-literatura" data-js="check">
                   <label class="form-check-label" for="lingua-portuguesa-lingua-estrangeira-e-literatura">
                     Língua Portuguesa, Língua Estrangeira e Literatura
                   </label>
                 </div>
                 <div class="form-check">
-                  <input class="form-check-input" type="checkbox" name="opcao13" value="matematica" id="matematica" data-js="input">
+                  <input class="form-check-input" type="checkbox" name="opcao13" value="matematica" id="matematica" data-js="check">
                   <label class="form-check-label" for="matematica">
                     Matemática
                   </label>                
                 </div>
                 <div class="form-check">
-                  <input class="form-check-input" type="checkbox" name="opcao14" value="meio ambiente" id="meio-ambiente" data-js="input">
+                  <input class="form-check-input" type="checkbox" name="opcao14" value="meio ambiente" id="meio-ambiente" data-js="check">
                   <label class="form-check-label" for="meio-ambiente">
                     Meio Ambiente
                   </label>                  
                 </div>
                 <div class="form-check">
-                  <input class="form-check-input" type="checkbox" name="opcao15" value="saude" id="saude" data-js="input">
+                  <input class="form-check-input" type="checkbox" name="opcao15" value="saude" id="saude" data-js="check">
                   <label class="form-check-label" for="saude">
                     Saúde
                   </label>                  
                 </div>
                 <div class="form-check">
-                  <input class="form-check-input" type="checkbox" name="opcao16" value="sociologia" id="sociologia" data-js="input">
+                  <input class="form-check-input" type="checkbox" name="opcao16" value="sociologia" id="sociologia" data-js="check">
                   <label class="form-check-label" for="sociologia">
                     Sociologia
                   </label>                  
                 </div>
                 <div class="form-check">
-                  <input class="form-check-input" type="radio" name="opcao17" value="outra" id="outra" data-js="input">
+                  <input class="form-check-input" type="radio" name="opcao17" value="outra" id="outra" data-js="check">
                   <label class="form-check-label" for="outra">
                     Outra
                   </label>                  
                 </div>
                 <div>
-                  <input type="text" name="informeQual" class="form-control" id="informeQual" data-js="input" placeholder="Outra Área De Pesquisa Da Feira">
+                  <input type="text" name="informeQual" class="form-control" id="informeQual" placeholder="Outra Área De Pesquisa Da Feira">
                 </div>
               </div>
               <br><br>
@@ -322,11 +322,11 @@
               <div>
                 <label><strong>11.</strong> Existe Um Comite De Revisão Ciêntifica Na Feira (informar a existencia de um grupo dentro da organização que se dedique à observação da regulamento e das regras de exposição, bem como da verificação da documentação dos projetos, identificando aspectos de ética e segurança observadas ao longo do processo pelos participantes. Caso exista esse grupo, descrever sua composição e forma de atuação): </label>
                 <div class="form-check form-check-inline">
-                  <input type="radio" name="existeComite" class="form-check-input" id="sim" value="S" placeholder="Se Existe Comite De Revisão Ciêntifica" data-js='radio'>
+                  <input type="radio" name="existeComite" class="form-check-input" id="sim" value="S" placeholder="Se Existe Comite De Revisão Ciêntifica" data-js='existe'>
                   <label for="sim" class="form-check-label">Sim</label>
                 </div>
                 <div class="form-check form-check-inline">
-                  <input type="radio" name="existeComite" class="form-check-input" id="N" value="sim" data-js='radio'>
+                  <input type="radio" name="existeComite" class="form-check-input" id="N" value="sim" data-js='existe'>
                   <label for="nao" class="form-check-label">Não</label>
                 </div>
               </div>
@@ -350,13 +350,13 @@
                       <label class="form-check-label" for="numeroProjetosFundamental">
                         Número De Projetos Previstos Para A Próxima Edição
                       </label>
-                      <input class="form-control" type="number" name="numeroProjetosInfantil" id="numeroProjetosInfantil" data-js="input" placeholder="Número De Projetos">
+                      <input class="form-control" type="number" name="numeroProjetosInfantil" id="numeroProjetosInfantil" placeholder="Número De Projetos">
                     </div>
                     <div class="col">
                       <label class="form-check-label" for="numeroEscolasFundamental">
                         Número De Escolas
                       </label>
-                      <input type="number" name="numeroEscolasInfantil" id="numeroEscolasInfantil" data-js="input" placeholder="Número De Escolas" class="form-control">
+                      <input type="number" name="numeroEscolasInfantil" id="numeroEscolasInfantil" placeholder="Número De Escolas" class="form-control">
                     </div>                  
                   </div>                  
                 </div>
@@ -373,13 +373,13 @@
                       <label class="form-check-label" for="numeroProjetosFundamental">
                         Número De Projetos Previstos Para A Próxima Edição
                       </label>
-                      <input class="form-control" type="number" name="numeroProjetosFundamental" id="numeroProjetosFundamental" data-js="input" placeholder="Número De Projetos">
+                      <input class="form-control" type="number" name="numeroProjetosFundamental" id="numeroProjetosFundamental" placeholder="Número De Projetos">
                     </div>
                     <div class="col">
                       <label class="form-check-label" for="numeroEscolasFundamental">
                         Número De Escolas
                       </label>
-                      <input type="number" name="numeroEscolasFundamental" id="numeroEscolasFundamental" data-js="input" placeholder="Número De Escolas" class="form-control">
+                      <input type="number" name="numeroEscolasFundamental" id="numeroEscolasFundamental" placeholder="Número De Escolas" class="form-control">
                     </div>                  
                   </div>                  
                 </div>
@@ -396,17 +396,41 @@
                       <label class="form-check-label" for="numeroProjetosMedioProfissional">
                         Número De Projetos Previstos Para A Próxima Edição
                       </label>
-                      <input class="form-control" type="number" name="numeroProjetosMedioProfissional" id="numeroProjetosMedioProfissional" data-js="input" placeholder="Número De Projetos">                  
+                      <input class="form-control" type="number" name="numeroProjetosMedioProfissional" id="numeroProjetosMedioProfissional" placeholder="Número De Projetos">                  
                     </div>
                     <div class="col">
                       <label class="form-check-label" for="numeroEscolasMedioProfissional">
                         Número De Escolas
                       </label>
-                      <input class="form-control" type="number" name="numeroEscolasMedioProfissional" id="numeroEscolasMedioProfissional" data-js="input" placeholder="Número De Projetos">
+                      <input class="form-control" type="number" name="numeroEscolasMedioProfissional" id="numeroEscolasMedioProfissional" placeholder="Número De Projetos">
                     </div>                  
                   </div>
                   <br>
-                  <div>
+                <div>
+                  <div class="form-check">
+                    <input class="form-check-input" type="checkbox" name="nivelEnsinoAlunosEducacaoSuperior" id="educacaoSuperior" data-js="input" value="educacaoSuperior" placeholder="Educação Infantil">
+                    <label class="form-check-label" for="educacaoSuperior">
+                      Ensino Superior
+                    </label>
+                  </div>
+                  <div class="form-row">
+                    <div class="col">
+                      <label class="form-check-label" for="numeroProjetosSuperior">
+                        Número De Projetos Previstos Para A Próxima Edição
+                      </label>
+                      <input class="form-control" type="number" name="numeroProjetosSuperior" id="numeroProjetosSuperior" placeholder="Número De Projetos">
+                    </div>
+                    <div class="col">
+                      <label class="form-check-label" for="numeroEscolasSuperior">
+                        Número De Escolas
+                      </label>
+                      <input type="number" name="numeroEscolasSuperior" id="numeroEscolasSuperior" placeholder="Número De Escolas" class="form-control">
+                    </div>                  
+                  </div>                  
+                </div>                  
+                </div>
+                <br>
+                 <div>
                     <label for="numeroTotalProjetosProximaEdicao" >Número Total De Projetos Previstos Para A Próxima Edição Da Feira: </label>
                     <input type="number" name="numeroTotalProjetosProximaEdicao" id="numeroTotalProjetosProximaEdicao" class="form-control" data-js="input" placeholder="Número Total De Projetos Previstos Pra Próxima Edição">
                   </div>
@@ -414,8 +438,7 @@
                   <div>
                     <label>Número Total De Escolas Previstos Para A Próxima Edição Da Feira: </label>
                     <input type="number" name="numeroTotalEscolasProximaEdicao" id="numeroTotalEscolasProximaEdicao" class="form-control" placeholder="Número Total De Escolas Para A Próxima Edição" data-js="input">
-                  </div>
-                </div>                  
+                  </div>                                  
               </div>
               <br>
               <div>
@@ -546,7 +569,7 @@
                 <br>
                 <div class="form-group">
                   <label for="numeroEscolasPublicasTotal">Número De Escolas Privadas: </label>
-                  <input type="number" name="numeroEscolasPrivadasTotal" id="numeroEscolasPublicasTotal" class="form-control" data-js="input" placeholder="Número Total De Escolas Públicas">
+                  <input type="number" name="numeroEscolasPrivadasTotal" id="numeroEscolasPublicasTotal" class="form-control" data-js="input" placeholder="Número Total De Escolas Privadas">
                 </div>
                 <br><br>
                 <label>Solicitações de Vagas Na Mostratec Junior 2018: </label>
